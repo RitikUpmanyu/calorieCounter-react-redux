@@ -6,7 +6,7 @@ import {store, persistor} from './store'
 import Landing from './components/users/Landing'
 import Login from './components/login/Login'
 import NotFound from './components/errors/NotFound'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import AddDish from './components/dishes/AddDish';
 import EditDish from './components/dishes/EditDish';
 import {useSelector} from "react-redux";
@@ -16,7 +16,7 @@ import {Logout} from "./components/login/Logout"
 function App() {
   return (
     <Provider store={store}> 
-      <Router>
+      <Router basename="/">
         <div className="App">
           <Navbar/>
           <div className="container">
