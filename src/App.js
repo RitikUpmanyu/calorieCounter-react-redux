@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import Dishes from './components/dishes/Dishes';
+import Navbar from './components/elements/Navbar';
+import {provider, Provider} from "react-redux"; 
+import './styles/App.scss';
+import {store, persistor} from './store'
+import Landing from './components/users/Landing'
+import Login from './components/login/Login'
+import NotFound from './components/errors/NotFound'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AddDish from './components/dishes/AddDish';
+import EditDish from './components/dishes/EditDish';
+import {useSelector} from "react-redux";
+import {VerifyAuth} from './VerifyAuth'
+import {Logout} from "./components/login/Logout"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}> 
+      <Router>
+        <div className="App">
+          <Navbar/>
+          <div className="container">
+            <div className="py-3">
+              <Switch> 
+                <Route exact path="/admin" >
+                  <VerifyAuth>
+                    <Dishes/>
+                  </VerifyAuth>
+                </Route>
+                <Route exact path="/admin/add" >
+                <VerifyAuth>
+                    <AddDish/>
+                  </VerifyAuth>
+                </Route>
+                <Route exact path="/admin/edit/:id">
+                <VerifyAuth>
+                    <EditDish/>
+                  </VerifyAuth>
+                </Route>
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/logout" component={Logout} />
+                <Route exact component={NotFound} />
+              </Switch>
+            </div>
+          </div>
+        </div>
+      </Router>
+    </Provider>
   );
 }
 

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+
+.actions{
+    opacity:0;
+}
+
+tr:hover .actions{
+    opacity: 1;
+}
+
+tbody td a {
+    color: black;
+
+    &:hover{
+        color: rgb(58, 58, 58)
+    }
+}
+

@@ -1,0 +1,10 @@
+export const CREATE_DISH="CREATE_DISH";
+export const GET_DISH="GET_DISH";
+export const UPDATE_DISH = "UPDATE_DISH";
+export const DELETE_DISH = "DELETE_DISH";
+export const SELECT_DISH = "SELECT_DISH";
+export const CLEAR_DISH = "CLEAR_DISH";
+export const DELETE_SELECTED_DISH = "DELETE_SELECTED_DISH";
+export const LOGIN="LOGIN";
+export const LOGOUT="LOGOUT";
+export const LOGIN_ADMIN="LOGIN_ADMIN";
