@@ -196,6 +196,12 @@ p
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards1 {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -470,7 +476,7 @@ p
   -moz-box-shadow: -1px 1px 64px 0px rgba(0,0,0,0.34);
 }
 
-#addDish-btn{
+.addDish-btn{
   margin-top: 2em;
   width: 100%
 }
@@ -505,6 +511,7 @@ p
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
+  padding-bottom: 16px;
   padding-right: 16px;
   border-radius: 30px;
 }

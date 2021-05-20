@@ -40,8 +40,8 @@ const EditDish = () => {
     history.push("/admin")
   }
   return (
-    <div className="card border-0 shadow">
-      <div className="card-header">Add a Dish</div>
+    <div className="card addDish border-0 shadow">
+      <div className="card-header">Edit Dish</div>
       <div className="card-body">
         <form onSubmit={e=>onUpdateDish(e)}>
         <div className="form-group">
@@ -80,7 +80,7 @@ const EditDish = () => {
               onChange={(e) => setFats(e.target.value)}
             />
           </div>
-          <button className="btn btn-warning" type="submit">
+          <button className="btn addDish-btn btn-warning" type="submit">
             Update Dish
           </button>
         </form>

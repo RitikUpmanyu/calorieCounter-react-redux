@@ -10,29 +10,30 @@ const Card = ({dish, index}) => {
     const [clientId, setClientId]=useState('O1ubEmW8eXvuVaxkrinN-GwpbPyq_0dtEFTsNmZoluU')
     const [result, setResult]=useState([]);
     const [imgUrl, setUrl]=useState("");
-    const [update, setUpdate]=useState([]);
+    const [count, setCount]=useState(0);
     const clickEvent=(e)=>{
-        setUpdate(e)
-        setUpdate("")
+        setCount(count+1)
+        console.log(count)
     }
-    const url="https://api.unsplash.com/search/photos?page=1&per_page=1&query="+
+    const url="https://api.unsplash.com/search/photos?page=2&per_page=10&query="+
     dish.name+"&client_id="+clientId
- 
+    
     console.log(dish.name)
-    const foodabstract = "https://images.unsplash.com/photo-1618502913824-e45c41e932d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzIyMTZ8MHwxfHNlYXJjaHwxfHxkaWV0JTIwZm9vZCUyMGdyYXBoaWN8ZW58MHx8fHwxNjIxNDM4NzI4&ixlib=rb-1.2.1&q=80&w=400"
+    const foodabstract = "https://scontent.fdel7-1.fna.fbcdn.net/v/t1.6435-1/p200x200/90145698_2595641050763168_4837813439516639232_n.jpg?_nc_cat=100&_nc_map=test-rt&ccb=1-3&_nc_sid=1eb0c7&_nc_ohc=-fI6p4E3PLoAX9BEfwA&_nc_ht=scontent.fdel7-1.fna&tp=6&oh=146559549a6d9cc5abad03b30012fcc2&oe=60CA8043"
     useEffect(() => {
         axios.get(url).then((response)=>{
             setResult(response.data.results);
             console.log(result)
-            if(result[0]!=undefined){
-                setUrl(result[0].urls.small);
-                console.log(result[0].urls.small)  
+            if(result[count]!=undefined){
+                setUrl(result[count].urls.small);
+                console.log(count)  
             }
             else{
                 setUrl(foodabstract);
+                setCount(0)
             }
         })
-    },[update]);
+    },[count]);
 
     console.log(imgUrl+"this")
     var divStyle = {
@@ -54,7 +55,7 @@ const Card = ({dish, index}) => {
                 </div></a>
                 <div class="property-description">
                 <h5> {dish.name} </h5>
-                <section class="cards">
+                <section class="cards1">
                 <div class="property-card1">
                 
                     <div class="property-image1">
@@ -66,7 +67,7 @@ const Card = ({dish, index}) => {
                 </div>
                 <ProgressBar key={id} bgcolor="green" completed={proteins} type="Proteins" cal={proteins*4} total={calories} />
                 </section>
-                <section class="cards">
+                <section class="cards1">
                 <div class="property-card1">
                 
                     <div class="property-image1">
@@ -78,7 +79,7 @@ const Card = ({dish, index}) => {
                 </div>
                 <ProgressBar key={id} bgcolor="yellow" completed={carbs} type="Carbs" cal={carbs*4} total={calories} />
                 </section>
-                <section class="cards">
+                <section class="cards1">
                 <div class="property-card1">
                 
                     <div class="property-image1">
@@ -90,7 +91,7 @@ const Card = ({dish, index}) => {
                 </div>
                 <ProgressBar key={id} bgcolor="red" completed={fats} type="Fats" cal={fats*4} total={calories}/>
                 </section>
-                <section class="cards">
+                <section class="cards1">
                 <div class="property-card1">
                 
                     <div class="property-image1">

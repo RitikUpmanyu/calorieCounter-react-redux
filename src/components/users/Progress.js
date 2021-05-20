@@ -35,7 +35,14 @@ const ProgressBar = (props) => {
     <div style={containerStyles}>
       
         <div style={fillerStyles}>
-          <span style={labelStyles}>{`${completed}g`}</span>
+        {
+            type=="calories" ? 
+            <span style={labelStyles}>{`${completed}`}
+            </span>
+            : <span style={labelStyles}>{`${completed}g`}
+            </span>
+          }
+         
         </div>
            
      

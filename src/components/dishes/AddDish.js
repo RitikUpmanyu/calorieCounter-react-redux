@@ -67,7 +67,7 @@ const AddDish = () => {
               onChange={(e) => setFats(e.target.value)}
             />
           </div>
-          <button id="addDish-btn" className="btn btn-primary" type="submit">
+          <button  className="btn addDish-btn btn-primary" type="submit">
             Create Dish
           </button>
         </form>
