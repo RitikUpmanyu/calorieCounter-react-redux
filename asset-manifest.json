@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/calorieCounter-react-redux/static/css/main.e0887edd.chunk.css",
-    "main.js": "/calorieCounter-react-redux/static/js/main.20403078.chunk.js",
-    "main.js.map": "/calorieCounter-react-redux/static/js/main.20403078.chunk.js.map",
+    "main.js": "/calorieCounter-react-redux/static/js/main.172e844f.chunk.js",
+    "main.js.map": "/calorieCounter-react-redux/static/js/main.172e844f.chunk.js.map",
     "runtime-main.js": "/calorieCounter-react-redux/static/js/runtime-main.c0649251.js",
     "runtime-main.js.map": "/calorieCounter-react-redux/static/js/runtime-main.c0649251.js.map",
     "static/css/2.11a141dc.chunk.css": "/calorieCounter-react-redux/static/css/2.11a141dc.chunk.css",
-    "static/js/2.97e15492.chunk.js": "/calorieCounter-react-redux/static/js/2.97e15492.chunk.js",
-    "static/js/2.97e15492.chunk.js.map": "/calorieCounter-react-redux/static/js/2.97e15492.chunk.js.map",
+    "static/js/2.8c645ae1.chunk.js": "/calorieCounter-react-redux/static/js/2.8c645ae1.chunk.js",
+    "static/js/2.8c645ae1.chunk.js.map": "/calorieCounter-react-redux/static/js/2.8c645ae1.chunk.js.map",
     "index.html": "/calorieCounter-react-redux/index.html",
     "static/css/2.11a141dc.chunk.css.map": "/calorieCounter-react-redux/static/css/2.11a141dc.chunk.css.map",
     "static/css/main.e0887edd.chunk.css.map": "/calorieCounter-react-redux/static/css/main.e0887edd.chunk.css.map",
-    "static/js/2.97e15492.chunk.js.LICENSE.txt": "/calorieCounter-react-redux/static/js/2.97e15492.chunk.js.LICENSE.txt",
+    "static/js/2.8c645ae1.chunk.js.LICENSE.txt": "/calorieCounter-react-redux/static/js/2.8c645ae1.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/calorieCounter-react-redux/static/media/pexels-lumn-1028599.4390a43e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c0649251.js",
     "static/css/2.11a141dc.chunk.css",
-    "static/js/2.97e15492.chunk.js",
+    "static/js/2.8c645ae1.chunk.js",
     "static/css/main.e0887edd.chunk.css",
-    "static/js/main.20403078.chunk.js"
+    "static/js/main.172e844f.chunk.js"
   ]
 }
