@@ -2,7 +2,70 @@ import {CREATE_DISH, GET_DISH, UPDATE_DISH, DELETE_DISH, SELECT_DISH, DELETE_SEL
 
 
 const initalState = {
-    Dishes: [ 
+    Dishes: [ {
+      id: 'EeGs5-jGi',
+      name: 'Spinach',
+      proteins: '8',
+      carbs: '3',
+      fats: '1',
+      calories: 53
+    },
+    {
+      id: 'DYXU0jzNs',
+      name: 'Milk ',
+      proteins: '8',
+      carbs: '5',
+      fats: '2',
+      calories: 70
+    },
+    {
+      id: 'w2KQz1BR0',
+      name: 'curd',
+      proteins: '6',
+      carbs: '5',
+      fats: '4',
+      calories: 80
+    },
+    {
+      id: 'MfPossKlt',
+      name: 'Mango',
+      proteins: '3',
+      carbs: '7',
+      fats: '5',
+      calories: 85
+    },
+    {
+      id: 'Tn7ZEuLX6',
+      name: 'Biscuits',
+      proteins: '1',
+      carbs: '7',
+      fats: '8',
+      calories: 104
+    },
+    {
+      id: 'UA_iHd2zT',
+      name: 'Roti',
+      proteins: '3',
+      carbs: '4',
+      fats: '1',
+      calories: 37
+    },
+    {
+      id: '7H1dqiXEA',
+      name: 'Egg',
+      proteins: '3',
+      carbs: '6',
+      fats: '2',
+      calories: 54
+    },
+    {
+      id: 'Td4lZeji9',
+      name: 'Potato',
+      proteins: '2',
+      carbs: '3',
+      fats: '4',
+      calories: 56
+    }
         ],
     Dish: null,
     selectedDishes: [],

@@ -7,11 +7,11 @@ $theme-colors: (
 
 :root {
   --backgroundColor: rgba(246, 241, 209);
-  --colorShadeA: rgb(128, 100, 194);
-  --colorShadeB: rgb(134, 106, 201);
-  --colorShadeC: rgb(171, 158, 202);
-  --colorShadeD: rgb(203, 191, 231);
-  --colorShadeE: rgb(209, 199, 233);
+    --colorShadeA: rgb(39 49 39);
+    --colorShadeB: rgb(77 121 44);
+    --colorShadeC: rgb(155 184 85);
+    --colorShadeD: rgb(164 193 129);
+    --colorShadeE: #b6c3a6;
 }
 
 // Bootstrap and its default variables
@@ -36,10 +36,23 @@ body {
   position: fixed;
   z-index: 1;
   top: 2em;
+  background-image: linear-gradient( 
+    15deg
+     , #8dba4266 0%, #9fbc6105 100%);
   box-shadow: -1px 1px 64px 0px rgba(0,0,0,0.34);
 -webkit-box-shadow: -1px 1px 64px 0px rgba(0,0,0,0.34);
 -moz-box-shadow: -1px 1px 64px 0px rgba(0,0,0,0.34);
    
+}
+
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+  background-image: linear-gradient(
+    15deg
+    , #61812b 0%, #9fbc61 100%);
 }
 
 .form-control {
@@ -56,12 +69,66 @@ input.form-control:focus {
 }
 
 .btn-primary {
-  background-color: #5878FF !important;
+  background-color: #577d34 !important;
   margin: 2em
   
 }
 .btn {
   margin: .2em
+}
+
+#navbar-togglerbtn{
+  top: 1em;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+/* ANIMATED X COLLAPSED */
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle .icon-bar {
+  height: 1px;
+    display: block;
+    width: 22px;
+    margin: 0.3em;
+    background: white;
+    transition: all 0.2s;
 }
 
 .btn-primary:focus {

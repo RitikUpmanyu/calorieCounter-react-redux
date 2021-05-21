@@ -65,7 +65,7 @@ const Card = ({dish, index}) => {
                     </div>
 
                 </div>
-                <ProgressBar key={id} bgcolor="green" completed={proteins} type="Proteins" cal={proteins*4} total={calories} />
+                <ProgressBar key={id} bgcolor="#6b5b95" completed={proteins} type="Proteins" cal={proteins*4} total={calories} />
                 </section>
                 <section class="cards1">
                 <div class="property-card1">
@@ -77,7 +77,7 @@ const Card = ({dish, index}) => {
                     </div>
 
                 </div>
-                <ProgressBar key={id} bgcolor="yellow" completed={carbs} type="Carbs" cal={carbs*4} total={calories} />
+                <ProgressBar key={id} bgcolor="#feb236" completed={carbs} type="Carbs" cal={carbs*4} total={calories} />
                 </section>
                 <section class="cards1">
                 <div class="property-card1">
@@ -89,7 +89,7 @@ const Card = ({dish, index}) => {
                     </div>
 
                 </div>
-                <ProgressBar key={id} bgcolor="red" completed={fats} type="Fats" cal={fats*4} total={calories}/>
+                <ProgressBar key={id} bgcolor="#d64161" completed={fats} type="Fats" cal={fats*4} total={calories}/>
                 </section>
                 <section class="cards1">
                 <div class="property-card1">
@@ -101,7 +101,7 @@ const Card = ({dish, index}) => {
                     </div>
 
                 </div>
-                <ProgressBar key={id} bgcolor="blue" completed={calories} type="Calories" cal={calories} total={calories} />
+                <ProgressBar key={id} bgcolor="#ff7b25" completed={calories} type="Calories" cal={calories} total={calories} />
                 </section>
                 </div>
                 
