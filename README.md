@@ -1,13 +1,13 @@
 Deployed here- https://ritikupmanyu.github.io/calorieCounter-react-redux/#/
 #### This is a simple calorie counter app,
 #### You can add dishes if you login as admin through the dummy login page,
-#### you can also edit and delete the dishes if you're admin,
+#### you can also edit and delete the dishes if you're admin by hovering over any dish in the admin panel,
 #### landing page is accessible even if you're not logged in and shows all the dishes added by admin,
 I have used **redux-persist** to make persist the state even after page refresh, however sometime it may behave unexpectedley
 #### Bonus Feature-
 **[MUST TRY]**
 On the landing page,
-you can click on the individual dish card and the default image will be changes by a picture of that food , 
+you can click on the individual dish card and the default image will be changed by a new picture of that food , 
 (this is done by unsplash API)
 #### (P.S. made this while End-Semester exams were going on, in less than 2 days)
 
